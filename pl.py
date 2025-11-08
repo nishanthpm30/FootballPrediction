@@ -12,7 +12,7 @@ from tkinter import ttk, messagebox
 # Load dataset
 url = "https://www.football-data.co.uk/mmz4281/2526/E0.csv"
 data = pd.read_csv(url)
-print(data.head())
+print(data.head())    
 
 # Keep only needed columns
 data = data[['HomeTeam', 'AwayTeam', 'FTR']].dropna()
